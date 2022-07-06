@@ -7,9 +7,10 @@ const dotenv = require("dotenv").config();
 
 //mongodb database URI connection
 const db = `${process.env.DB_URI}://${process.env.DB_NAME}:${process.env.DB_PASS}@blog.qmoze.mongodb.net/?retryWrites=true&w=majority`;
+const port = process.env.PORT || 5000;
 mongoose
   .connect(db)
-  .then((result) => app.listen(3000))
+  .then((result) => app.listen(port))
   .catch((err) => console.log("error connecting to database"));
 
 //registering view engine
