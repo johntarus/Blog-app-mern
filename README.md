@@ -11,10 +11,6 @@
 ## Running the app
 - Fork the repo and then clone it or download it.
 - First install all dependencies: `npm i`
-- Create a config/config. js file and add your mongodb URI and your port
-- Create a config/config.js file and insert the following code it will contains all code variables. Replace values with yours !!!
-```
-to be provided
-```
+- Create a ```config/config.js``` file and add your mongodb URI and your port
 - Start the server `npm run dev`
 - Now run the app `npm start`
